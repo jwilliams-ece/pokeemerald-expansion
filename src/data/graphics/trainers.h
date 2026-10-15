@@ -217,6 +217,9 @@ const u16 gTrainerPalette_MagmaAdmin[] = INCGFX_U16("graphics/trainers/front_pic
 const u32 gTrainerFrontPic_Wally[] = INCGFX_U32("graphics/trainers/front_pics/wally.png", ".4bpp.smol");
 const u16 gTrainerPalette_Wally[] = INCGFX_U16("graphics/trainers/palettes/wally.pal", ".gbapal");
 
+const u32 gTrainerFrontPic_Naruto[] = INCGFX_U32("graphics/trainers/front_pics/naruto.png", ".4bpp.smol");
+const u16 gTrainerPalette_Naruto[] = INCGFX_U16("graphics/trainers/palettes/naruto.pal", ".gbapal");
+
 const u32 gTrainerFrontPic_Brendan[] = INCGFX_U32("graphics/trainers/front_pics/brendan.png", ".4bpp.smol");
 const u16 gTrainerPalette_Brendan[] = INCGFX_U16("graphics/trainers/palettes/brendan.pal", ".gbapal");
 
@@ -585,6 +588,10 @@ const union AnimCmd *const sBackAnims_OldManPokedude[] = {
 
 const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
 {
+    [TRAINER_PIC_NARUTO] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Naruto, gTrainerPalette_Naruto),
+    },
     [TRAINER_PIC_NONE] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_None, gTrainerPalette_None),
